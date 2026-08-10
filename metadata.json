@@ -1,0 +1,6 @@
+{
+  "name": "Live Sports Tracker",
+  "description": "Personalized sports hub for tracking live scores, league standings, match schedules, player statistics, and AI game-day insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
