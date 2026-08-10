@@ -1,0 +1,37 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User preferences, saved favorite teams and notification settings",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "favoriteTeamIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "autoRefreshInterval": { "type": "number" },
+        "notificationsEnabled": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId"]
+    },
+    "userMatchNotes": {
+      "title": "User Match Notes",
+      "description": "User recorded voice notes or custom match comments",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "matchId": { "type": "string" },
+        "transcript": { "type": "string" },
+        "aiSummary": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "matchId", "transcript"]
+    }
+  }
+}
